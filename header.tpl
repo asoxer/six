@@ -38,6 +38,11 @@
                   </ul>
                   <div class="nav navbar-nav navbar-right">
                     <div id="top-nav">
+
+                        <!-- Shopping Cart -->
+                        <div class="pull-right nav">
+                            <a href="{$WEB_ROOT}/cart.php?a=view" class="quick-nav"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs">{$LANG.viewcart} (</span><span id="cartItemCount">{$cartitemcount}</span><span class="hidden-xs">)</span></a>
+                        </div>
                         <!-- Language -->
                         {if $languagechangeenabled && count($locales) > 1}
                             <div class="pull-right nav">
@@ -90,11 +95,6 @@
                                 </div>
                             </div>
                         {/if}
-                        <!-- Shopping Cart -->
-                        <div class="pull-right nav">
-                            <a href="{$WEB_ROOT}/cart.php?a=view" class="quick-nav"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs">{$LANG.viewcart} (</span><span id="cartItemCount">{$cartitemcount}</span><span class="hidden-xs">)</span></a>
-                        </div>
-
                         {if $adminMasqueradingAsClient}
                             <!-- Return to admin link -->
                             <div class="alert alert-danger admin-masquerade-notice">
