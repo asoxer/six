@@ -105,10 +105,12 @@
                 </div>
               </li>
             {/if}
+            {if $loggedin}
             <li>
               {include file="$template/includes/navbar.tpl" navbar=$secondaryNavbar}
-              <!-- 登录 & 通知 end -->
+              <!-- 用户 end -->
             </li>
+            {/if}
             <li>
               <!-- Shopping Cart -->
               <a href="{$WEB_ROOT}/cart.php?a=view" class="quick-nav"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs">{$LANG.viewcart} (</span><span id="cartItemCount">{$cartitemcount}</span><span class="hidden-xs">)</span></a>

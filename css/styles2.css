@@ -152,7 +152,7 @@ header .navbar-default .navbar-nav > .open > a:hover {
 .nav-links > li > a {
   display: block !important;
   margin-left: 14px;
-  padding: 14px 0 !important;
+  padding: 14px 7px !important;
   color: #fff !important;
   text-decoration: none;
 }
