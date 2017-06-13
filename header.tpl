@@ -31,7 +31,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="header-navbar-collapse">
           <ul class="nav navbar-nav">
-              <li class="active"><a href="">首页</a></li>
+              <li class="active"><a href="/">首页</a></li>
               <li><a href="">价格体系</a></li>
               <li><a rel="nofollow" href="">购买服务</a></li>
               <li><a rel="nofollow" href="">联系我们</a></li>
@@ -125,6 +125,7 @@
 
 {$headeroutput}
 
+{if $templatefile == 'homepage'}
 <section id="main-menu">
 
     <nav id="nav" class="navbar navbar-default navbar-main" role="navigation">
@@ -155,7 +156,7 @@
     </nav>
 
 </section>
-
+{/if}
 {if $templatefile == 'homepage'}
     <section id="home-banner">
         <div class="container text-center">
