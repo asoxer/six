@@ -4,7 +4,7 @@
             {if $item->hasIcon()}<i class="{$item->getIcon()}"></i>&nbsp;{/if}
             {$item->getLabel()}
             {if $item->hasBadge()}&nbsp;<span class="badge">{$item->getBadge()}</span>{/if}
-            {if $item->hasChildren()}&nbsp;<b class="caret"></b>{/if}
+            {if $item->hasChildren()} <b class="caret"></b>{/if}
         </a>
         {if $item->hasChildren()}
             <ul class="dropdown-menu" aria-labelledby="navbar1">
