@@ -157,7 +157,7 @@
 
 </section>
 {/if}
-{if $templatefile == 'homepage'}
+{if $templatefile neq 'homepage'}
     <section id="home-banner">
         <div class="container text-center">
             {if $registerdomainenabled || $transferdomainenabled}
