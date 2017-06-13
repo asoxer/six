@@ -5,7 +5,6 @@
 {/if}
 
 <div class="tab-content margin-bottom">
-  <h1>12312312</h1>
     <div class="tab-pane fade in active" id="tabOverview">
 
         {if $systemStatus != 'Active'}
@@ -321,3 +320,4 @@
         {/if}
     </div>
 </div>
+
