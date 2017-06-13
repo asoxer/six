@@ -157,7 +157,7 @@
 
 </section>
 {/if}
-{if $templatefile == 'homepage'}
+<!-- {if $templatefile == 'homepage'}
     <section id="home-banner">
         <div class="container text-center">
             {if $registerdomainenabled || $transferdomainenabled}
@@ -235,12 +235,12 @@
             </div>
         </div>
     </div>
-{/if}
+{/if} -->
 
-{include file="$template/includes/verifyemail.tpl"}
+<!-- {include file="$template/includes/verifyemail.tpl"} -->
 
-<section id="main-body" class="container">
-
+<!-- <section id="main-body" class="container"> -->
+<!--
     <div class="row">
         {if !$inShoppingCart && ($primarySidebar->hasChildren() || $secondarySidebar->hasChildren())}
             {if $primarySidebar->hasChildren()}
@@ -253,7 +253,7 @@
             </div>
         {/if}
         <!-- Container for main page display content -->
-        <div class="{if !$inShoppingCart && ($primarySidebar->hasChildren() || $secondarySidebar->hasChildren())}col-md-9 pull-md-right{else}col-xs-12{/if} main-content">
+        <!-- <div class="{if !$inShoppingCart && ($primarySidebar->hasChildren() || $secondarySidebar->hasChildren())}col-md-9 pull-md-right{else}col-xs-12{/if} main-content">
             {if !$primarySidebar->hasChildren() && !$showingLoginPage && !$inShoppingCart && $templatefile != 'homepage'}
                 {include file="$template/includes/pageheader.tpl" title=$displayTitle desc=$tagline showbreadcrumb=true}
-            {/if}
+            {/if} --> -->

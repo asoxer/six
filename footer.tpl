@@ -1,45 +1,48 @@
-
-        </div><!-- /.main-content -->
-        {if !$inShoppingCart && $secondarySidebar->hasChildren()}
-            <div class="col-md-3 pull-md-left sidebar">
-                {include file="$template/includes/sidebar.tpl" sidebar=$secondarySidebar}
-            </div>
-        {/if}
-    </div>
-    <div class="clearfix"></div>
-</section>
-
-<section id="footer">
-    <p>Copyright &copy; {$date_year} {$companyname}. All Rights Reserved.</p>
-</section>
-
-<div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content panel panel-primary">
-            <div class="modal-header panel-heading">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title">Title</h4>
-            </div>
-            <div class="modal-body panel-body">
-                Loading...
-            </div>
-            <div class="modal-footer panel-footer">
-                <div class="pull-left loader">
-                    <i class="fa fa-circle-o-notch fa-spin"></i> Loading...
-                </div>
-                <button type="button" class="btn btn-default" data-dismiss="modal">
-                    Close
-                </button>
-                <button type="button" class="btn btn-primary modal-submit">
-                    Submit
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
+<footer>
+  <div class="quick-links">
+      <div class="row">
+          <div class="col-md-3">
+              <dl>
+                  <dt>服务与支持</dt>
+                  <dd><a rel="nofollow" href="" target="_blank">售前咨询</a></dd>
+                  <dd><a rel="nofollow" href="" target="_blank">购买服务</a></dd>
+                  <dd><a rel="nofollow" href="" target="_blank">附加服务</a></dd>
+                  <dd><a href="" target="_blank">使用协议</a></dd>
+              </dl>
+          </div>
+          <div class="col-md-3">
+              <dl>
+                  <dt>资源下载</dt>
+                  <dd><a href="" target="_blank">Windows客户端</a></dd>
+                  <dd><a href="" target="_blank">Mac osx客户端</a></dd>
+                  <dd><a href="" target="_blank">iOS客户端</a></dd>
+                  <dd><a href="" target="_blank">Android客户端</a></dd>
+                  <dd><a href="" target="_blank">其它客户端</a></dd>
+              </dl>
+          </div>
+          <div class="col-md-3">
+              <dl>
+                  <dt>快捷菜单</dt>
+                  <dd><a rel="nofollow" href="" target="_blank">控制面板</a></dd>
+                  <dd><a rel="nofollow" href="" target="_blank">提交工单</a></dd>
+                  <dd><a rel="nofollow" href="" target="_blank">我的工单</a></dd>
+                  <dd><a rel="nofollow" href="" target="_blank">我的服务</a></dd>
+              </dl>
+          </div>
+          <div class="col-md-3">
+              <dl>
+                  <dt>财务管理</dt>
+                  <dd><a rel="nofollow" href="" target="_blank">我的账单</a></dd>
+                  <dd><a rel="nofollow" href="" target="_blank">定制订单</a></dd>
+                  <dd><a rel="nofollow" href="" target="_blank">批量付款</a></dd>
+              </dl>
+          </div>
+      </div>
+  </div>
+  <div class="copyright">
+      © 2014-2017 <a href="">天行VPN</a> All Rights Reserved.
+  </div>
+</footer>
 
 {$footeroutput}
 
