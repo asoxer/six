@@ -36,22 +36,6 @@
       </div>
       <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
   </div>
-  <script>
-    $(function() {
-        new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true
-        });
-
-        $('.product-lists').find('.item').hover(function() {
-            $('.product-lists').find('.item').removeClass('elite');
-            var $this = $(this)
-            if (!$this.hasClass('product-list')) {
-              $this.addClass('elite')
-            }
-        })
-    });
-  </script>
   <section class="wrap introduction">
       <h4>全球领先，安全稳定的二代天行VPN加速服务</h4>
       <p>支持 Windows, Linux, Mac, Android, iOS, and OpenWRT 几乎所有主流平台</p>
@@ -293,4 +277,20 @@
         <img src="{$WEB_ROOT}/templates/{$template}/images/site-logos.png">
       </span>
   </section>
+  <script>
+    $(function() {
+        new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true
+        });
+
+        $('.product-lists').find('.item').hover(function() {
+            $('.product-lists').find('.item').removeClass('elite');
+            var $this = $(this)
+            if (!$this.hasClass('product-list')) {
+              $this.addClass('elite')
+            }
+        })
+    });
+  </script>
 </div>
