@@ -225,13 +225,13 @@ footer .copyright {
   margin-top: 40px;
 }
 #index .swiper-container .slide-1 {
-  background-image: url(../images/banner/banner-01-bg.png);
+  background-image: url(/templates/six/images/banner/banner-01-bg.png);
 }
 #index .swiper-container .slide-2 {
-  background-image: url(../images/banner/banner-02-bg.png);
+  background-image: url(/templates/six/images/banner/banner-02-bg.png);
 }
 #index .swiper-container .slide-3 {
-  background-image: url(../images/banner/banner-03-bg.png);
+  background-image: url(/templates/six/images/banner/banner-03-bg.png);
 }
 #index .swiper-container .swiper-pagination-bullet {
   border-radius: 0;

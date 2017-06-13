@@ -1,3 +1,4 @@
+<div id="index">
 <!-- Slider main container -->
   <div class="swiper-container swiper-container-horizontal">
       <div class="swiper-wrapper">
@@ -283,12 +284,13 @@
       <p>无论是普通上网浏览，还是游戏加速需要，全球无缝覆盖</p>
   </section>
   <section class="wrap map">
-      <img src="./images/map.png">
+      <img src="{$WEB_ROOT}/templates/{$template}/images/map.png">
       <span class="state us">美国</span>
       <span class="state jp">日本</span>
       <span class="state sg">新加坡</span>
       <span class="state hk">香港</span>
       <span class="state site-logos">
-        <img src="./images/site-logos.png">
+        <img src="{$WEB_ROOT}/templates/{$template}/images/site-logos.png">
       </span>
   </section>
+</div>
