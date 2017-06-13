@@ -108,7 +108,12 @@
                                 <a href="{$WEB_ROOT}/logout.php?returntoadmin=1" class="alert-link">{$LANG.returntoadminarea}</a>
                             </div>
                         {/if}
+                        <!-- 登录 & 通知 end -->
+                        <ul class="nav navbar-nav navbar-right">
 
+                            {include file="$template/includes/navbar.tpl" navbar=$secondaryNavbar}
+
+                        </ul>
                     </div>
                   </div>
               </div>
@@ -143,11 +148,7 @@
 
                 </ul>
 
-                <ul class="nav navbar-nav navbar-right">
 
-                    {include file="$template/includes/navbar.tpl" navbar=$secondaryNavbar}
-
-                </ul>
 
             </div><!-- /.navbar-collapse -->
         </div>
