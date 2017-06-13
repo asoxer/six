@@ -278,19 +278,17 @@
       </span>
   </section>
   <script>
-    $(function() {
-        new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true
-        });
-
-        $('.product-lists').find('.item').hover(function() {
-            $('.product-lists').find('.item').removeClass('elite');
-            var $this = $(this)
-            if (!$this.hasClass('product-list')) {
-              $this.addClass('elite')
-            }
-        })
+    new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
     });
+
+    $('.product-lists').find('.item').hover(function() {
+        $('.product-lists').find('.item').removeClass('elite');
+        var $this = $(this)
+        if (!$this.hasClass('product-list')) {
+          $this.addClass('elite')
+        }
+    })
   </script>
 </div>
