@@ -1,5 +1,5 @@
 {foreach $navbar as $item}
-  {if $childItem->getName() neq 'Domains'}
+  {if $item->getName() neq 'Domains'}
     <li menuItemName="{$item->getName()}"{if $item->hasChildren()} class="dropdown"{elseif $item->getClass()} class="{$item->getClass()}"{/if} id="{$item->getId()}">
         <a id="navbar1" {if $item->hasChildren()}class="dropdown-toggle" data-toggle="dropdown" href="#"{else}href="{$item->getUri()}"{/if}{if $item->getAttribute('target')} target="{$item->getAttribute('target')}"{/if}>
             {if $item->hasIcon()}<i class="{$item->getIcon()}"></i>&nbsp;{/if}
