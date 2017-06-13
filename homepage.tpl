@@ -1,8 +1,8 @@
 <div id="index">
 <!-- Slider main container -->
-  <div class="swiper-container swiper-container-horizontal">
+  <div class="swiper-container">
       <div class="swiper-wrapper">
-          <div class="swiper-slide slide-3 swiper-slide-active" style="width: 1903px;">
+          <div class="swiper-slide">
               <div class="text">
                   <h4>今天 进阶版 半价，仅售 ￥64.50 元/年</h4>
                   <p>活动时间：23:59:59 截止，限量发售 200 名</p>
@@ -13,7 +13,7 @@
                   </div>
               </div>
           </div>
-          <div class="swiper-slide slide-2 swiper-slide-next" style="width: 1903px;">
+          <div class="swiper-slide">
               <div class="text">
                   <h4>潜心研发 成功推出第二代天行VPN</h4>
                   <p>天行VPN <sup>pro</sup> 第二代安全性更高，稳定性更强</p>
@@ -23,7 +23,7 @@
                   </div>
               </div>
           </div>
-          <div class="swiper-slide slide-1" style="width: 1903px;">
+          <div class="swiper-slide">
               <div class="text">
                   <h4>行业级加密算法</h4>
                   <p>采用行业级AES-256-CFB加密算法，通过私密管道传输，保障您的隐私安全</p>
@@ -34,7 +34,7 @@
               </div>
           </div>
       </div>
-      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+      <div class="swiper-pagination"></div>
   </div>
   <section class="wrap introduction">
       <h4>全球领先，安全稳定的二代天行VPN加速服务</h4>
@@ -278,17 +278,20 @@
       </span>
   </section>
   <script>
-    new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true
-    });
+    window.onload = function() {
+      new Swiper('.swiper-container', {
+          pagination: '.swiper-pagination',
+          paginationClickable: true
+      });
 
-    $('.product-lists').find('.item').hover(function() {
-        $('.product-lists').find('.item').removeClass('elite');
-        var $this = $(this)
-        if (!$this.hasClass('product-list')) {
-          $this.addClass('elite')
-        }
-    })
+      $('.product-lists').find('.item').hover(function() {
+          $('.product-lists').find('.item').removeClass('elite');
+          var $this = $(this)
+          if (!$this.hasClass('product-list')) {
+            $this.addClass('elite')
+          }
+      })
+    };
+
   </script>
 </div>
