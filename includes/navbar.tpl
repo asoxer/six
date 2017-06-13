@@ -9,7 +9,7 @@
         {if $item->hasChildren()}
             <ul class="dropdown-menu" aria-labelledby="navbar1">
             {foreach $item->getChildren() as $childItem}
-              {if $childItem->getName() neq 'Domains'}
+              {if $childItem->getName() is not Domains}
                 <li menuItemName="{$childItem->getName()}"{if $childItem->getClass()} class="{$childItem->getClass()}"{/if} id="{$childItem->getId()}">
                     <a href="{$childItem->getUri()}"{if $childItem->getAttribute('target')} target="{$childItem->getAttribute('target')}"{/if}>
                         {if $childItem->hasIcon()}<i class="{$childItem->getIcon()}"></i>&nbsp;{/if}
