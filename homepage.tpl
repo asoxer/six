@@ -2,7 +2,7 @@
 <!-- Slider main container -->
   <div class="swiper-container">
       <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide slide-1">
               <div class="text">
                   <h4>今天 进阶版 半价，仅售 ￥64.50 元/年</h4>
                   <p>活动时间：23:59:59 截止，限量发售 200 名</p>
@@ -13,7 +13,7 @@
                   </div>
               </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide slide-2">
               <div class="text">
                   <h4>潜心研发 成功推出第二代天行VPN</h4>
                   <p>天行VPN <sup>pro</sup> 第二代安全性更高，稳定性更强</p>
@@ -23,7 +23,7 @@
                   </div>
               </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide slide-3">
               <div class="text">
                   <h4>行业级加密算法</h4>
                   <p>采用行业级AES-256-CFB加密算法，通过私密管道传输，保障您的隐私安全</p>
