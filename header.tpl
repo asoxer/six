@@ -125,7 +125,7 @@
 
 {$headeroutput}
 
-{if $templatefile == 'homepage'}
+{if $templatefile neq 'homepage'}
 <section id="main-menu">
 
     <nav id="nav" class="navbar navbar-default navbar-main" role="navigation">
@@ -157,7 +157,7 @@
 
 </section>
 {/if}
-{if $templatefile neq 'homepage'}
+{if $templatefile == 'homepage'}
     <section id="home-banner">
         <div class="container text-center">
             {if $registerdomainenabled || $transferdomainenabled}
