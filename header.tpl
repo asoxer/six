@@ -36,7 +36,7 @@
                       <li><a rel="nofollow" href="">购买服务</a></li>
                       <li><a rel="nofollow" href="">联系我们</a></li>
                   </ul>
-                  <div class="nav navbar-nav navbar-right">
+                  <div class="nav navbar-nav navbar-right nav-links">
                     <!-- Shopping Cart -->
                     <div class="pull-right nav">
                         <a href="{$WEB_ROOT}/cart.php?a=view" class="quick-nav"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs">{$LANG.viewcart} (</span><span id="cartItemCount">{$cartitemcount}</span><span class="hidden-xs">)</span></a>

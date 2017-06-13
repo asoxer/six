@@ -84,7 +84,7 @@ a:focus {
 .btn-reverse.primary:hover {
   color: #fff;
   border-color: #66bafc;
-  background: #54b2fc;  
+  background: #54b2fc;
 }
 
 
@@ -124,7 +124,7 @@ header .navbar-default .navbar-nav > li > a:hover {
   color: #fff;
 }
 header .navbar-default .navbar-nav > li > a {
-  text-shadow: none;  
+  text-shadow: none;
 }
 header .navbar-default .navbar-nav > .active > a,
 header .navbar-default .navbar-nav > .open > a,
@@ -181,7 +181,7 @@ footer .copyright {
 
 /* system */
 input, button, select, textarea {
-  font-family: inherit;  
+  font-family: inherit;
 }
 .badge {
   font-weight: normal;

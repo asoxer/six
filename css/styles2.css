@@ -149,7 +149,7 @@ header .navbar-default .navbar-nav > .open > a:hover {
   padding-right: 10px;
   font-size: .9em;
 }*/
-#top-nav a.quick-nav {
+.nav-links a {
   display: block;
   margin: 0 0 0 15px;
   padding: 14px;
