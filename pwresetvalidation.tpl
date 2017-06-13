@@ -1,3 +1,4 @@
+
 <div class="logincontainer">
 
     {include file="$template/includes/pageheader.tpl" title=$LANG.pwreset}

@@ -1,76 +1,74 @@
-<div class="tiles clearfix">
+  <link rel="stylesheet" type="text/css" href="{$WEB_ROOT}/templates/static/css/index.css">
+  <link rel="stylesheet" type="text/css" href="{$WEB_ROOT}/templates/static/css/client.css">
+
+</head>
+<body>
+<header>
+  <div class="container">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="">影梭</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="true">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+      </div>
+      <nav class="navbar-collapse collapse" id="bs-navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="/">首页</a>
+            </li>
+            <li>
+              <a href="/cart.php">套餐价格</a>
+            </li>
+            <li>
+              <a href="/client.html">客户端</a>
+            </li>
+            <li>
+              <a href="/help.html">使用教程</a>
+            </li>
+            <li>
+              <a href="/tos.html">服务条款</a>
+            </li>
+            <li>
+              <a href="/clientarea.php">登录</a>
+            </li>
+            <li>
+              <a href="/register.php" class="btn btn-outline btn-border">注册</a>
+            </li>
+          </ul>
+      </nav>
+  </div>
+</header>
+
+<div class="tiles clearfix container">
     <div class="row">
-        <div class="col-sm-3 col-xs-6 tile" onclick="window.location='clientarea.php?action=services'">
-            <a href="clientarea.php?action=services">
+        <div class="col-sm-4 col-xs-6 tile" onclick="window.location='clientarea.php?action=services'">
+            <a class="type-item" href="clientarea.php?action=services">
                 <div class="icon"><i class="fa fa-cube"></i></div>
-                <div class="stat">{$clientsstats.productsnumactive}</div>
-                <div class="title">{$LANG.navservices}</div>
+                <div class="title">{$LANG.navservices} <span class="text-red">{$clientsstats.productsnumactive}</span></div>
                 <div class="highlight bg-color-blue"></div>
             </a>
         </div>
-        {if $registerdomainenabled || $transferdomainenabled}
-            <div class="col-sm-3 col-xs-6 tile" onclick="window.location='clientarea.php?action=domains'">
-                <a href="clientarea.php?action=domains">
-                    <div class="icon"><i class="fa fa-globe"></i></div>
-                    <div class="stat">{$clientsstats.numactivedomains}</div>
-                    <div class="title">{$LANG.navdomains}</div>
-                    <div class="highlight bg-color-green"></div>
-                </a>
-            </div>
-        {elseif $condlinks.affiliates && $clientsstats.isAffiliate}
-            <div class="col-sm-3 col-xs-6 tile" onclick="window.location='affiliates.php'">
-                <a href="affiliates.php">
-                    <div class="icon"><i class="fa fa-shopping-cart"></i></div>
-                    <div class="stat">{$clientsstats.numaffiliatesignups}</div>
-                    <div class="title">{$LANG.affiliatessignups}</div>
-                    <div class="highlight bg-color-green"></div>
-                </a>
-            </div>
-        {else}
-            <div class="col-sm-3 col-xs-6 tile" onclick="window.location='clientarea.php?action=quotes'">
-                <a href="clientarea.php?action=quotes">
-                    <div class="icon"><i class="fa fa-file-text-o"></i></div>
-                    <div class="stat">{$clientsstats.numquotes}</div>
-                    <div class="title">{$LANG.quotes}</div>
-                    <div class="highlight bg-color-green"></div>
-                </a>
-            </div>
-        {/if}
-        <div class="col-sm-3 col-xs-6 tile" onclick="window.location='supporttickets.php'">
-            <a href="supporttickets.php">
+        <div class="col-sm-4 col-xs-6 tile" onclick="window.location='supporttickets.php'">
+            <a class="type-item" href="supporttickets.php">
                 <div class="icon"><i class="fa fa-comments"></i></div>
-                <div class="stat">{$clientsstats.numactivetickets}</div>
-                <div class="title">{$LANG.navtickets}</div>
+                <div class="title">{$LANG.navtickets} <span class="text-blue">{$clientsstats.numactivetickets}</span></div>
                 <div class="highlight bg-color-red"></div>
             </a>
         </div>
-        <div class="col-sm-3 col-xs-6 tile" onclick="window.location='clientarea.php?action=invoices'">
-            <a href="clientarea.php?action=invoices">
+        <div class="col-sm-4 col-xs-6 tile" onclick="window.location='clientarea.php?action=invoices'">
+            <a class="type-item" href="clientarea.php?action=invoices">
                 <div class="icon"><i class="fa fa-credit-card"></i></div>
-                <div class="stat">{$clientsstats.numunpaidinvoices}</div>
-                <div class="title">{$LANG.navinvoices}</div>
+                <div class="title">{$LANG.navinvoices} <span class="text-green">{$clientsstats.numunpaidinvoices}</span></div>
                 <div class="highlight bg-color-gold"></div>
             </a>
         </div>
     </div>
 </div>
 
-<form role="form" method="post" action="clientarea.php?action=kbsearch">
-    <div class="row">
-        <div class="col-md-12 home-kb-search">
-            <input type="text" name="search" class="form-control input-lg" placeholder="{$LANG.clientHomeSearchKb}" />
-            <i class="fa fa-search"></i>
-        </div>
-    </div>
-</form>
-
-{foreach from=$addons_html item=addon_html}
-    <div>
-        {$addon_html}
-    </div>
-{/foreach}
-
-<div class="client-home-panels">
+<div class="client-home-panels container">
     <div class="row">
         <div class="col-sm-6">
 
@@ -141,3 +139,17 @@
         </div>
     </div>
 </div>
+<!-- poster -->
+<section class="poster">
+  <div class="container">
+      <div class="row text-center">
+          <div class="col-md-10 col-md-offset-1">
+              <h2>影梭：致力于网络加速第一选择！</h2>
+              <a href="/cart.php" class="btn btn-successful">立即体验</a>
+          </div>
+      </div>
+  </div>
+</section>
+<footer>
+  <h4><center>© 2017  影梭 - SSR -影梭官网 - 使用本站服务请遵守中国大陆以及香港法律</center></h4>
+</footer>
