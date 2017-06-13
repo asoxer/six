@@ -8,6 +8,9 @@
         </a>
         {if $item->hasChildren()}
             <ul class="dropdown-menu" aria-labelledby="navbar1">
+              <li>
+                <a href="/clientarea.php">用户中心</a>
+              </li>
             {foreach $item->getChildren() as $childItem}
                 <li menuItemName="{$childItem->getName()}"{if $childItem->getClass()} class="{$childItem->getClass()}"{/if} id="{$childItem->getId()}">
                     <a href="{$childItem->getUri()}"{if $childItem->getAttribute('target')} target="{$childItem->getAttribute('target')}"{/if}>
