@@ -149,12 +149,15 @@ header .navbar-default .navbar-nav > .open > a:hover {
   padding-right: 10px;
   font-size: .9em;
 }*/
-.nav-links a {
-  display: block;
-  margin: 0 0 0 15px;
-  padding: 14px;
-  color: #fff;
+.nav-links > li > a {
+  display: block !important;
+  margin-left: 14px;
+  padding: 14px 0 !important;
+  color: #fff !important;
   text-decoration: none;
+}
+.dropdown.open > a {
+  color: #000 !important;
 }
 .login-form {
   min-width: 248px;
